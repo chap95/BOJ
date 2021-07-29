@@ -22,22 +22,19 @@ function solve(input) {
   var horizontal = Number(aspect[0]);
   var vertical = Number(aspect[1]);
   var allInOneRow = [];
+  var minColoring = 0;
   console.log("horizontal , vertical -> ", horizontal, vertical);
   for (var i = 1; i + 7 <= horizontal; i++) {
+    var curColoring = 0;
     console.log("candidate index -> ", i);
     for (var j = 0; j + 7 < vertical; j++) {
       for (var h = i; h < i + 8; h++) {
-        console.log("selectd index -> ", h);
-        var row = input[h].split("");
-        console.log("row -> ", row);
-        for (var v = j; v < j + 8; v++) {
-          allInOneRow.push(row[v]);
-        }
+        // console.log("selectd index -> ", h);
+        var row = input[h].split("").slice(j, j + 8);
+        console.log(`row index: ${h}, col index: ${j + 1} result:   `, row);
       }
     }
   }
-
-  console.log(allInOneRow);
 
   return;
 }
