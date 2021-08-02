@@ -5,3 +5,4 @@
 [2. 분해합 / bruteForce](https://www.acmicpc.net/problem/2231)   
 [3. 덩치 / bruteForce](https://www.acmicpc.net/problem/7568)   
 [4. 체스판 다시 칠하기 / bruteForce](https://www.acmicpc.net/problem/1018)   
+[5. 감독 슘 / bruteForce](https://www.acmicpc.net/problem/1436)  
